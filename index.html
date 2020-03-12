@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="container-page">
+        <div class="aside">
+            <div class="mobile-menu-button">
+                <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+                  </a>
+            </div>
+            <div class="aside-content">
+                <div class="aside-head">
+                    <h2>Работа Мечты</h2>
+                </div>
+                <div class="aside-body">
+                    <nav>
+                        <ul class="menu">
+                            <li class="item-menu item-home"><a href="#">Home</a></li>
+                            <li class="item-menu item-time"><a href="#">Time Management</a></li>
+                            <li class="item-menu item-inbox"><a href="#">Inbox</a></li>
+                            <li class="item-menu item-calendar"><a href="#">Calendar</a></li>
+                            <li class="item-menu item-analytics active"><a href="#">Analytics</a></li>
+                            <li class="item-menu item-settings"><a href="#">Settings</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <section class="content">
+            <div class="container">
+                <div class="info-text">
+                    <h2>Hi Filip,</h2>
+                    <p>Checkout your latest projects and their progress.</p>
+                </div>
+                <div class="main-chart">
+                    <div class="header-chart">
+                        <div class="header">
+                            <h3>Wavy Lines</h3>
+                            <p>Working Hours</p>
+                        </div>
+                        <div class="nav-chart">
+                            <span>This Week</span>
+                            <ul class="nav">
+                                <li><a href="#">This Day</a></li>
+                                <li><a href="#">This Week</a></li>
+                                <li><a href="#">This Month</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <canvas id="chart-weeks" style="height: 360px; width: 1200px;"></canvas>
+                </div>
+                <div class="bottom-chart">
+                    <div class="circle-chart">
+                        <div class="chart-container">
+                            <canvas id="chart-circle" style="height: 190px; width: 215px;"></canvas>
+                        </div>
+                        <div class="legend">
+                            <ul>
+                                <li class="legend-item item-yes">Да</li>
+                                <li class="legend-item item-no">Нет</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="status-chart">
+                        <div class="chart-container">
+                            <canvas id="chart-status" style="height: 200px; width: 1200px;"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
